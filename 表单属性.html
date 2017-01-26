@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>表单属性</title>
+  </head>
+  <body>
+    <form id="form_id" action="表单属性.html" autocomplete="on">
+        <input type="text" name="text" value="">
+        <input type="email" name="email" autocomplete="off" value="">
+        <input type="submit">
+    </form>
+    <hr />
+    <form id="form_id" action="表单属性.html" autocomplete="on">
+        <input type="text" name="text" value="">
+        <input type="email" name="email">
+        <input type="submit">
+    </form>
+    <hr />
+    <!-- autocomplete 属性可以使光标默认在输入框 -->
+    <!-- multiple 属性可以选中多个文件 -->
+    <form id="form_id" action="表单属性.html" autocomplete="on">
+        <input type="file" name="file" multiple="multiple">
+        <input type="email" name="email" autocomplete="off" autofocus="autofocus">
+        <input type="submit">
+    </form>
+    <hr />
+    <!-- placeholder 属性适用于input 标签type 属性值为： text seaech url telephone email password 中 -->
+    <form id="form_id" action="表单属性.html" autocomplete="on">
+        USERNAME:<input type="text" name="texty" value="" placeholder="请输入您的用户名">
+        Email:<input type="email" name="email" autocomplete="off" placeholder="请输入您的邮箱">
+    </form>
+    <hr />
+    <!-- required 属性（表单验证） 属性适用于input 标签type属性值为：text search url telephone email password date pickers number checkbox radio file-->
+    <form id="form_id" action="表单属性.html" method="post">
+        <input type="text" required="required" name="username" value="">
+        <input type="email" required="required" name="email" value="">
+        <input type="submit">
+    </form>
+  </body>
+</html>
